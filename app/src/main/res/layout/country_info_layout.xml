@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:weightSum="10"
+        android:id="@+id/allCountriesLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:id="@+id/ll1">
+
+            <TextView
+                android:id="@+id/txtCountryName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/country_name"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/imgCountryFlag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:contentDescription="@android:string/cancel"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_below="@+id/ll1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capital"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/txtRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/region"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtSubregion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subregion"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtPopulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/population"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtBorders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/borders"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtLanguages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/languages"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

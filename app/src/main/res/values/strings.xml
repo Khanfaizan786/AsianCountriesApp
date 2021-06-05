@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Asian Countries</string>
+    <string name="languages">Languages</string>
+    <string name="borders">Borders</string>
+    <string name="population">Population</string>
+    <string name="subregion">Subregion</string>
+    <string name="region">Region</string>
+    <string name="capital">Capital</string>
+    <string name="country_name">Country Name</string>
+</resources>
